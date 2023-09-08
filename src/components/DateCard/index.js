@@ -9,7 +9,7 @@ const StyledDiv = styled.div`
     margin-left: 2%;
     background: ${props => props.background === "day" ? '#e50134' : '#141d50'};
     color : white;
-    margin : 0px  ${props => props.marinX + 'px'};
+    margin : 0px  ${props => props.marginX + 'px'};
 `    
 
 const Text = styled.div`
@@ -18,10 +18,10 @@ const Text = styled.div`
     text-shadow: 0 0 20px #48c8ff;
 `
 
-function DateCard({ name = "Button", background = 'day', type ="Seconds", text = 60 , marinX = 10}) {
+function DateCard({ name = "Button", background = 'day', type ="Seconds", text = 60 , marginX = 10}) {
     return (
         <div>
-            <StyledDiv background={background} marinX = {marinX}>
+            <StyledDiv background={background} marginX = {marginX}>
                 <Text>{text}</Text>
                 <div>{type}</div>
             </StyledDiv>

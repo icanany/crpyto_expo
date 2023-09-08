@@ -23,6 +23,7 @@ const Item = styled.div`
     justify-content: center;
     padding: 20px 15px;
     border-bottom: 1px solid white;
+    cursor: pointer;
 `;
 
 const scale = keyframes`

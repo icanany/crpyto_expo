@@ -10,7 +10,7 @@ const FootContainer = styled.div`
     justify-content : center;
     background-color: rgba(18, 18, 18, 0.9);
     width: 100%;
-    index: 999;
+    z-index: 999;
 ` 
 const Container = styled.div`
     display : flex;
@@ -46,7 +46,7 @@ function Footer () {
             </DateContainer>
             <ButtonContainer>
                 <Button name ="Become Sponsar" background ={"second"}/>
-                <Button name ="Register Now" marinX = {16}/>
+                <Button name ="Register Now" marginX = {16}/>
             </ButtonContainer>
         </Container>
     </FootContainer>)

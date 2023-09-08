@@ -10,7 +10,7 @@ const HeaderContainer = styled.div`
     top : 0;
     background-color: rgb(20, 30, 80);
     width: 100%;
-    index: 9999;
+    z-index: 9999;
 ` 
 const Container = styled.div`
     display : flex;
@@ -26,32 +26,28 @@ const LogoContainer =  styled.div`
     display : flex;
     align-items :  center;
     justify-content: center;
-
 `
 const HeaderContentContainer = styled.div`
     display: flex;
     flex-direction : row;
     align-items :  center;
     margin-left: 20px;
-
 `
 const ButtonContainer = styled.div`
     display: flex;
     flex-direction:row;
     align-items :  center;
 `
-
 const HeaderContent = styled.div`
     margin: 0 10px;
     font-size : 15px;
     color: white;
+    cursor : pointer;
 ` 
 const Img  = styled.img`
     width: 50px;
     height: 23px;
 `
-
-
 function Header () {
     return(<HeaderContainer>
             <Container>
@@ -69,13 +65,12 @@ function Header () {
                 </HeaderContentContainer>
                 <ButtonContainer>
                     <Button background="second" name  = "Become Sponsor" />
-                    <Button name="Register Now" marinX ={16}/>
+                    <Button name="Register Now" marginX ={16}/>
                 </ButtonContainer>
             </Container>
         </HeaderContainer>
-)
+    )
 }
-
 
 export default Header
 

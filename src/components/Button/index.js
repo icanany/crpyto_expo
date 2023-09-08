@@ -13,17 +13,17 @@ const StyledButton = styled.button`
     justify-content: center;
     padding: 0;
     cursor: pointer;
-    margin : 0px  ${props => props.marinX + 'px'};
+    margin : 0px  ${props => props.marginX + 'px'};
     &:hover {
         background: ${props => props.background === 'main' ? "white" : "#e50134"};
         color: ${props => props.background === 'main' ? "#e50134" : "white"};
     }
 `;
 
-function Button({ name = "Button", background = 'main', marinX = 0}) {
+function Button({ name = "Button", background = 'main', marginX = 0}) {
     return (
         <div>
-            <StyledButton background={background} marinX = {marinX}>{name}</StyledButton>
+            <StyledButton background={background} marginX = {marginX}>{name}</StyledButton>
         </div>
     );
 }
